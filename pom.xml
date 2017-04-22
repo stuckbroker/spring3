@@ -8,7 +8,7 @@
 	<name>spring3 mvc maven</name>
 
 	<properties>
-		<jdk.version>1.6</jdk.version>
+		<jdk.version>1.7</jdk.version>
 		<spring.version>3.2.13.RELEASE</spring.version>
 		<jstl.version>1.2</jstl.version>
 		<servletapi.version>3.1.0</servletapi.version>
@@ -74,6 +74,15 @@
 					<wtpContextName>spring3</wtpContextName>
 				</configuration>
 			</plugin>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-war-plugin</artifactId>
+            <configuration>
+                <failOnMissingWebXml>false</failOnMissingWebXml>
+            </configuration>
+        </plugin>
+			
+			
 
 		</plugins>
 	</build>
